@@ -117,4 +117,18 @@
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="in.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="points_2-3.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="linear.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="nonlinear.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

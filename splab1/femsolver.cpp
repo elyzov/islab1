@@ -106,15 +106,6 @@ void FemSolver::inputPoints(const string &fname)
                    std::ifstream::eofbit);
 
     uint num;
-    fin >> num;
-    xySources.resize(num);
-    powSources.resize(num);
-    for (uint i = 0; i < num; ++i)
-    {
-        fin >> xySources.at(i).first.x >> xySources.at(i).first.y;
-        fin >> xySources.at(i).second.x >> xySources.at(i).second.y;
-        fin >> powSources.at(i);
-    }
 
     fin >> num;
     xyReceivers.resize(num);
@@ -337,11 +328,7 @@ int FemSolver::diffSolInPointsPair(rvector & sol)
     {
         FemPoint & pM = xyReceivers.at(i).first;
         FemPoint & pN = xyReceivers.at(i).second;
-        FemPoint & pA = xySources.at(srcReceivers.at(i)).first;
-        FemPoint & pB = xySources.at(srcReceivers.at(i)).second;
-        sol.at(i) = value(len(pA, pN)) - value(len(pA, pM)) -
-                    value(len(pB, pN)) + value(len(pB, pM));
-        sol.at(i) *= powSources.at(srcReceivers.at(i));
+        sol.at(i) = value(len(pN)) - value(len(pM));
     }
     return 0;
 }
@@ -353,10 +340,7 @@ int FemSolver::diffSolInPointsPair0(rvector & sol)
     {
         FemPoint & pM = xyReceivers.at(i).first;
         FemPoint & pN = xyReceivers.at(i).second;
-        FemPoint & pA = xySources.at(srcReceivers.at(i)).first;
-        FemPoint & pB = xySources.at(srcReceivers.at(i)).second;
-        sol.at(i) = value(len(pA, pN)) - value(len(pA, pM)) -
-                    value(len(pB, pN)) + value(len(pB, pM));
+        sol.at(i) = value(len(pN)) - value(len(pM));
     }
     return 0;
 }
@@ -368,9 +352,7 @@ void FemSolver::getRadius(rvector &res)
     {
         FemPoint & pM = xyReceivers.at(i).first;
         FemPoint & pN = xyReceivers.at(i).second;
-        FemPoint & pA = xySources.at(srcReceivers.at(i)).first;
-        FemPoint & pB = xySources.at(srcReceivers.at(i)).second;
-        res.at(i) = len(mid(pA, pB), mid(pN, pM));
+        res.at(i) = len(mid(pN, pM));
     }
 }
 

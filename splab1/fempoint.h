@@ -13,6 +13,7 @@ struct FemPoint
 };
 
 real len(const FemPoint & a, const FemPoint & b);
+real len(const FemPoint & a);
 FemPoint mid(const FemPoint & a, const FemPoint & b);
 
 typedef std::vector<FemPoint> FemPointList;

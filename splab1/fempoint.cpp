@@ -11,6 +11,11 @@ real len(const FemPoint & a, const FemPoint & b)
     return sqrt(pow(b.x - a.x, 2) + pow(b.y - a.y, 2));
 }
 
+real len(const FemPoint & a)
+{
+	return sqrt(pow(a.x, 2) + pow(a.y, 2));
+}
+
 FemPoint mid(const FemPoint & a, const FemPoint & b)
 {
     FemPoint m;

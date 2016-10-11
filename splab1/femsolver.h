@@ -54,8 +54,6 @@ private:
     intRealVector sources;  //!< Массив точечных источников.
     Slau matrix;
 
-    FemPointPairList xySources;
-    rvector powSources;
     FemPointPairList xyReceivers;
     intVector srcReceivers;
     rvector wReceivers;
@@ -74,12 +72,6 @@ public: /*! Интерфейс. */
     real value(real x, real y = 0);
     void setSigma(uint num, real value) {stuff.at(num).set_sig(value);}
     real sigma(uint num) {return stuff.at(num).sig();}
-    void setPower(uint num, real value = 0) {powSources.at(num) = value;}
-    //void setPower(real value) {powSources.front() = value;}
-    real power(uint num = 0) {return powSources.at(num);}
-    void setSourcePos(const FemPointPair & position){xySources.front() = position;}
-    void setSourcePos(int num, const FemPointPair & position)
-        {xySources.at(num) = position;}
     void test();
     int diffSolInPointsPair(rvector& sol);
     int diffSolInPointsPair0(rvector & sol);

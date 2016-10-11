@@ -39,7 +39,6 @@ void FemInverse::solveLinear(const string &file)
     DenseSLAE slae(M);
     rvector u(M);
     rvector2d err(M, rvector(N));
-    FemPointPairList coords(M);
     real curJ = 0;
     bool use_alpha = false;
 
@@ -48,15 +47,12 @@ void FemInverse::solveLinear(const string &file)
     fin >> use_alpha;
     for (uint i = 0; i < M; ++i)
     {
-        fin >> coords.at(i).first.x >> coords.at(i).first.y
-            >> coords.at(i).second.x >> coords.at(i).second.y;
         fin >> u.at(i) >> u0.at(i);
     }
 
     Stopwatch::inst().start("linear");
     for (uint i = 0; i < M; ++i)
     {
-        dirTask->setSourcePos(coords.at(i));
         dirTask->diffSolInPointsPair0(err.at(i));
         //RandomVariable::inst().setNormalError(noise, err.at(i));
     }

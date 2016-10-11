@@ -182,6 +182,12 @@
     <ClInclude Include="stopwatch.h" />
     <ClInclude Include="typedef.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="in.txt" />
+    <Text Include="linear.txt" />
+    <Text Include="nonlinear.txt" />
+    <Text Include="points_2-3.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

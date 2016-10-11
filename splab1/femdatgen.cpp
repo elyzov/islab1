@@ -80,15 +80,6 @@ void FemDatGen::input(const std::string &fname, real koef)
         stuff[nmat] = FemStuff(muo);
     }
 
-    fin >> nSources;
-    for (int i = 0; i < nSources; i++)
-    {
-        real x, y, pow;
-        fin >> x >> y >> pow;
-        pointSrc.push_back(std::make_pair(FemPoint(x, y), pow));
-    }
-
-
     fin >> x0 >> kolX;
     for (int i = 0; i < kolX; i++)
     {
@@ -122,6 +113,17 @@ void FemDatGen::input(const std::string &fname, real koef)
         ar.y1 = gridY[ny1-1].coord;
         areas.push_back(ar);
     }
+
+	fin >> nSources;
+	for (int i = 0; i < nSources; i++)
+	{
+		real x, y, pow;
+		int nx, ny;
+		fin >> nx >> ny >> pow;
+		x = nx ? gridX[nx - 1].coord : x0;
+		y = ny ? gridY[ny - 1].coord : y0;
+		pointSrc.push_back(std::make_pair(FemPoint(x, y), pow));
+	}
 
     fin >> doubleToX >> doubleToY;
     fin.close();
