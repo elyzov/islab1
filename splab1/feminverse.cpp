@@ -114,7 +114,9 @@ void FemInverse::solveNonLinear(const string &file)
     }
 
     /*! Извлекаем истинные значения параметров. */
-    for (uint i = 0; i < M; ++i) u_exp[i] = dirTask->sigma(nParam[i]);
+	for (uint i = 0; i < M; ++i) {
+		u_exp[i] = dirTask->sigma(nParam[i]);
+	}
 
     /*! Вычисляем значения весов для приемников. */
     //getResp(nParam, u, noise, err);
