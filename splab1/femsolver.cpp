@@ -7,6 +7,7 @@ FemSolver::FemSolver()
     fillFileMap();
     fillG();
     eps = 1.e-6;
+	srcPower = 1.0;
 }
 
 FemSolver::FemSolver(FemDatGen &generator)
@@ -107,6 +108,7 @@ void FemSolver::inputPoints(const string &fname)
 
     uint num;
 
+	fin >> srcPower;
     fin >> num;
     xyReceivers.resize(num);
     wReceivers.resize(num);
@@ -329,6 +331,7 @@ int FemSolver::diffSolInPointsPair(rvector & sol)
         FemPoint & pM = xyReceivers.at(i).first;
         FemPoint & pN = xyReceivers.at(i).second;
         sol.at(i) = value(len(pN)) - value(len(pM));
+		sol.at(i) *= srcPower;
     }
     return 0;
 }

@@ -54,6 +54,7 @@ private:
     intRealVector sources;  //!< Массив точечных источников.
     Slau matrix;
 
+	real srcPower;
     FemPointPairList xyReceivers;
     intVector srcReceivers;
     rvector wReceivers;
@@ -71,6 +72,7 @@ public: /*! Интерфейс. */
     void solve(const FemStuffList &param);
     real value(real x, real y = 0);
     void setSigma(uint num, real value) {stuff.at(num).set_sig(value);}
+	void setSourcePower(real value) { srcPower = value; }
     real sigma(uint num) {return stuff.at(num).sig();}
     void test();
     int diffSolInPointsPair(rvector& sol);
