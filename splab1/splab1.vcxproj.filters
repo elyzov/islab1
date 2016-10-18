@@ -130,5 +130,8 @@
     <Text Include="nonlinear.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="points_1-3.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -112,7 +112,6 @@ void FemSolver::inputPoints(const string &fname)
     fin >> num;
     xyReceivers.resize(num);
     wReceivers.resize(num);
-    srcReceivers.resize(num);
     errReceivers.resize(num);
     for (uint i = 0; i < num; ++i)
     {
@@ -120,7 +119,6 @@ void FemSolver::inputPoints(const string &fname)
             >> xyReceivers.at(i).first.y;
         fin >> xyReceivers.at(i).second.x
             >> xyReceivers.at(i).second.y;
-        fin >> srcReceivers.at(i);
         fin >> wReceivers.at(i);
         fin >> errReceivers.at(i);
         errReceivers.at(i) *= 0.01;

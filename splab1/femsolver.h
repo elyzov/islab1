@@ -56,7 +56,6 @@ private:
 
 	real srcPower;
     FemPointPairList xyReceivers;
-    intVector srcReceivers;
     rvector wReceivers;
     rvector errReceivers;
 

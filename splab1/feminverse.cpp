@@ -104,7 +104,8 @@ void FemInverse::solveNonLinear(const string &file)
     bool solved = false;
     bool invalidParam = false;
     bool use_alpha = false;
-    rvector w(N);// = dirTask->getPointWeight();
+    rvector w(N);
+	//rvector w = dirTask->getPointWeight();
     uint iterNum;
 
     fin >> use_alpha;
