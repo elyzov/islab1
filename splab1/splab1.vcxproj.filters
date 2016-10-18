@@ -133,5 +133,11 @@
     <Text Include="points_1-3.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="points_1-2.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="points_2-2.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>

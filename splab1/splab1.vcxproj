@@ -186,7 +186,9 @@
     <Text Include="in.txt" />
     <Text Include="linear.txt" />
     <Text Include="nonlinear.txt" />
+    <Text Include="points_1-2.txt" />
     <Text Include="points_1-3.txt" />
+    <Text Include="points_2-2.txt" />
     <Text Include="points_2-3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

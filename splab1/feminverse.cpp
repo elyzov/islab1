@@ -183,7 +183,7 @@ void FemInverse::solveNonLinear(const string &file)
                 u_next[i] = u[i] + betta * slae.X(i);
                 if (u_next[i] < 0) invalidParam = true;
             }
-            //cerr << "Test betta u = " << u_next << endl << flush;
+            cerr << "Test betta = " << betta << " u = " << u_next << endl << flush;
             if (invalidParam)
             {
                 throw Fem_Solver_Error("There is invalid param in betta");
@@ -194,7 +194,7 @@ void FemInverse::solveNonLinear(const string &file)
             }
             getDiffResp(nParam, u_next, err);
             curJ = calcJ(err, w);
-            //cerr << "nev = " << nev << ", J = " << curJ << endl;
+            cerr << "nev = " << nev << ", J = " << curJ << endl;
             if (fabs(curJ - prevJ) / prevJ < SOLVE_EPS)
             {
                 solved = true;

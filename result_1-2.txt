@@ -1,0 +1,95 @@
+ & 5.500001e+00 & 1.614174e-19\\
+InvIter #0, J = 8958.99, nev = 0
+Test alpha = 0, u = (0.01115)
+Current u = (0.01115)
+InvIter #1, J = 30.4464, nev = 0.628333
+Test alpha = 0, u = (0.0847121)
+Current u = (0.0847121)
+InvIter #2, J = 4.44364, nev = 1.82374
+Test alpha = 0, u = (-1.53746)
+Test alpha = 1e-07, u = (-1.53746)
+Test alpha = 5e-07, u = (-1.53746)
+Test alpha = 2.5e-06, u = (-1.53746)
+Test alpha = 1.25e-05, u = (-1.53746)
+Test alpha = 6.25e-05, u = (-1.53745)
+Test alpha = 0.0003125, u = (-1.53743)
+Test alpha = 0.0015625, u = (-1.53731)
+Test alpha = 0.0078125, u = (-1.5367)
+Test alpha = 0.0390625, u = (-1.53368)
+Test alpha = 0.195313, u = (-1.51874)
+Test alpha = 0.976563, u = (-1.44794)
+Test alpha = 4.88281, u = (-1.17018)
+Test alpha = 24.4141, u = (-0.569511)
+Test alpha = 122.07, u = (-0.0989917)
+Test alpha = 610.352, u = (0.0559158)
+Current u = (0.0559158)
+InvIter #3, J = 2.28835, nev = 0.86386
+Test alpha = 0, u = (-0.45127)
+Test alpha = 1e-07, u = (-0.45127)
+Test alpha = 5e-07, u = (-0.45127)
+Test alpha = 2.5e-06, u = (-0.45127)
+Test alpha = 1.25e-05, u = (-0.45127)
+Test alpha = 6.25e-05, u = (-0.45127)
+Test alpha = 0.0003125, u = (-0.451268)
+Test alpha = 0.0015625, u = (-0.45126)
+Test alpha = 0.0078125, u = (-0.451222)
+Test alpha = 0.0390625, u = (-0.451028)
+Test alpha = 0.195313, u = (-0.450062)
+Test alpha = 0.976563, u = (-0.445284)
+Test alpha = 4.88281, u = (-0.422586)
+Test alpha = 24.4141, u = (-0.332558)
+Test alpha = 122.07, u = (-0.132386)
+Test alpha = 610.352, u = (0.0298733)
+Current u = (0.0298733)
+InvIter #4, J = 0.000191507, nev = 0.00422183
+Test alpha = 0, u = (0.0311977)
+Current u = (0.0300389)
+InvIter #5, J = 1.78462e-05, nev = 0.00129623
+Test alpha = 0, u = (0.0296301)
+Current u = (0.0299878)
+InvIter #6, J = 1.76783e-06, nev = 0.000406973
+Test alpha = 0, u = (0.030116)
+Current u = (0.0300038)
+InvIter #7, J = 1.71868e-07, nev = 0.000127263
+Test alpha = 0, u = (0.0299638)
+Current u = (0.0299988)
+InvIter #8, J = 1.68103e-08, nev = 3.94891e-05
+Test alpha = 0, u = (0.0300113)
+Current u = (0.0300004)
+InvIter #9, J = 1.64372e-09, nev = 1.26402e-05
+Test alpha = 0, u = (0.0299965)
+Current u = (0.0299999)
+InvIter #10, J = 1.63343e-10, nev = 3.64834e-06
+Test alpha = 0, u = (0.0300011)
+Current u = (0.03)
+InvIter #11, J = 1.87527e-11, nev = 1.44201e-06
+Test alpha = 0, u = (0.0299997)
+Current u = (0.03)
+InvIter #12, J = 4.63326e-12, nev = 1.4871e-07
+Test alpha = 0, u = (0.0300001)
+Current u = (0.03)
+InvIter #13, J = 3.25438e-12, nev = 3.48391e-07
+Test alpha = 0, u = (0.03)
+Current u = (0.03)
+InvIter #14, J = 3.11973e-12, nev = 1.93047e-07
+Test alpha = 0, u = (0.03)
+Current u = (0.03)
+InvIter #15, J = 3.10658e-12, nev = 2.41592e-07
+Test alpha = 0, u = (0.03)
+Current u = (0.03)
+InvIter #16, J = 3.10529e-12, nev = 2.26422e-07
+Test alpha = 0, u = (0.03)
+Current u = (0.03)
+InvIter #17, J = 3.10517e-12, nev = 2.31162e-07
+Test alpha = 0, u = (0.03)
+Current u = (0.03)
+InvIter #18, J = 3.10516e-12, nev = 2.29681e-07
+Test alpha = 0, u = (0.03)
+Current u = (0.03)
+InvIter #19, J = 3.10515e-12, nev = 2.30144e-07
+Test alpha = 0, u = (0.03)
+Current u = (0.03)
+InvIter #20, J = 3.10515e-12, nev = 2.29999e-07
+Test alpha = 0, u = (0.03)
+ & 3.000000e-02 & 3.000001e-02  & 2.299993e-07 & 3.105154e-12 & 20 & 4.225000\\
+Для продолжения нажмите любую клавишу . . .
